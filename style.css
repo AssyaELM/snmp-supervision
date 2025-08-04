@@ -1,0 +1,300 @@
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+form select, form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+form select:focus, form input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form select[multiple] {
+    width: 100%;
+    max-width: 350px;
+    height: 150px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}
+
+form select[multiple] option {
+    padding: 8px;
+    color: #333;
+    background: #fff;
+}
+
+form select[multiple] option:hover {
+    background: #f4f4f4;
+}
+
+form select[multiple] option:checked {
+    background: #28a745;
+    color: #fff;
+}
+
+form input[type="submit"] {
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1.5px solid #000;
+}
+
+table th {
+    background: #bfd4ec;
+    color: #000000;
+}
+
+table td.status-up {
+    color: #28a745;
+    font-weight: bold;
+}
+
+table td.status-down {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+table td.status-unknown {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.chart-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.chart-container {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modifier {
+    color: #000000;
+}
+
+.button-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button-grid a {
+    padding: 10px 20px;
+    background: #7994c7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button-grid a:hover {
+    background: #3554b7;
+}
+
+.no-alert, .error, .success {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.no-alert {
+    background: #17a2b8;
+}
+
+.error {
+    background: #ff6b6b;
+}
+
+.success {
+    background: #28a745;
+}
+
+.loading {
+    text-align: center;
+    padding: 10px;
+    background: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.switch-card {
+    background: #c3d6eb;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button.edit {
+    background: #ffc107;
+}
+
+.button.edit:hover {
+    background: #e0a800;
+}
+
+.button.delete {
+    background: #dc3545;
+}
+
+.button.delete:hover {
+    background: #c82333;
+}
+
+.layout-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.side-menu {
+    width: 220px;
+    background: #bfd4ec;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 6px 0 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.side-menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #1565c0;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.side-menu a:hover {
+    background-color: #0d47a1;
+    transform: translateX(5px);
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 30px;
+    background: #f0f8ff;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+    text-align: center;
+    color: #333;
+}
